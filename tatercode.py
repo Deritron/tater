@@ -22,7 +22,7 @@ nu=datetime.datetime.now()
 huidigetijd = str(nu)
 print(huidigetijd)
 logbestand.write(huidigetijd)
-logbestand.write("\r\n Ik begin nu water te geven \r\n")
+logbestand.write("\r\nIk begin nu water te geven.\r\n")
 
 GPIO.output(8, GPIO.HIGH)
 
@@ -37,6 +37,6 @@ nu=datetime.datetime.now()
 huidigetijd = str(nu)
 print(huidigetijd)
 logbestand.write(huidigetijd)
-logbestand.write("\r\n Ik ben klaar met water geven \r\n")
-logbestand.write("***************************************** \r\n")
+logbestand.write("\r\nIk ben klaar met water geven.\r\n")
+logbestand.write("*****************************************\r\n")
 
