@@ -1,4 +1,4 @@
-#Wijziging op GitHub
+#Wijziging op GitHub - Nieuw
 import time
 import datetime
 import RPi.GPIO as GPIO
