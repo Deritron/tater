@@ -1,3 +1,4 @@
+#Wijziging op GitHub
 import time
 import datetime
 import RPi.GPIO as GPIO
