@@ -1,11 +1,10 @@
-#Wijziging op GitHub - Nieuw
 import time
 import datetime
 import RPi.GPIO as GPIO
 
 #initialisatie pinnetje
 GPIO.setwarnings(False)
-GPIO.setmode(GPIO.BOARD) #we gebruiken de fysieke pin nummer(pinout)
+GPIO.setmode(GPIO.BOARD) #we gebruiken de fysieke pin nummer in de plaats van de GPIO nummer. (zie commando "pinout" op de Raspberry Pi
 GPIO.setup(8, GPIO.OUT, initial=GPIO.LOW) #bijopstarten staat pinnetje altijd af
 
 
