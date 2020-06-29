@@ -7,5 +7,14 @@ De Code op GitHub kan je op Raspberry Pi krijgen door in de locatie /webapp te g
 Wanneer het script loopt kan je bepalen via "crontab".
 Om het crontab bestand te openen geef het commando: crontab -e
 
+Daar kan je zie je bijvoorbeeld:
 
+0 7 * * * /usr/bin/python3 /webapp/tatercode.py
+0 18 * * * /usr/bin/python3 /webapp/tatercode.py
+#* * * * * /usr/bin/python3 /webapp/tatercode.py
+
+
+De eerste lijn zegt dat get script "webapp/tatercode.py" moet starten om 07:00
+De tweede lijn zegt dat get script "webapp/tatercode.py" moet starten om 18:00
+De derde lijn zegt dat get script "webapp/tatercode.py" moet lopen iedere minuut, echter staat er een # voor wil dit zeggen dat deze niet uitgevoerd moet worden , we gebruiken dit om te testen zodat we niet lang moeten wachten om het resultaat van wijzigingen te zien.
 
