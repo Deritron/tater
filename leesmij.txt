@@ -1,4 +1,11 @@
 Dit is een infobestand over het project.
 
+Onderstaande is informatie als je met SSH bent ingelogd op de Raspberry Pi:
+
 De Code op GitHub kan je op Raspberry Pi krijgen door in de locatie /webapp te gaan staan en vervolgens "git pull" als commando te geven.
+
+Wanneer het script loopt kan je bepalen via "crontab".
+Om het crontab bestand te openen geef het commando: crontab -e
+
+
 
