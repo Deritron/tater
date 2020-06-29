@@ -1,0 +1,4 @@
+Dit is een infobestand over het project.
+
+De Code op GitHub kan je op Raspberry Pi krijgen door in de locatie /webapp te gaan staan en vervolgens "git pull" als commando te geven.
+
