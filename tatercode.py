@@ -7,7 +7,7 @@ import RPi.GPIO as GPIO
 GPIO.cleanup()
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD) #we gebruiken de fysieke pin nummer in de plaats van de GPIO nummer. (zie commando "pinout" op de Raspberry Pi
-GPIO.setup(8, GPIO.OUT, initial=GPIO.LOW) #bijopstarten staat pinnetje altijd af
+GPIO.setup(8, GPIO.OUT) #bijopstarten staat pinnetje altijd af
 
 
 #watertijd is de duurtijd in seconde dat hij water zal geven
