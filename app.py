@@ -36,12 +36,12 @@ def action(changePin, action):
    # Get the device name for the pin being changed:
    deviceName = pins[changePin]['name']
    # If the action part of the URL is "on," execute the code indented below:
-   if action == "on":
+   if action == "off":
       # Set the pin high:
       GPIO.output(changePin, GPIO.HIGH)
       # Save the status message to be passed into the template:
       message = "Turned " + deviceName + " off."
-   if action == "off":
+   if action == "on":
       GPIO.output(changePin, GPIO.LOW)
       message = "Turned " + deviceName + " on."
 
