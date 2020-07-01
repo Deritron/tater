@@ -16,7 +16,7 @@ for pin in pins:
    GPIO.setup(pin, GPIO.OUT)
    GPIO.output(pin, GPIO.LOW)
 
-@app.route("/webapp/")
+@app.route("/")
 def main():
    # For each pin, read the pin state and store it in the pins dictionary:
    for pin in pins:
