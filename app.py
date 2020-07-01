@@ -40,10 +40,10 @@ def action(changePin, action):
       # Set the pin high:
       GPIO.output(changePin, GPIO.HIGH)
       # Save the status message to be passed into the template:
-      message = "Turned " + deviceName + " on."
+      message = "Turned " + deviceName + " off."
    if action == "off":
       GPIO.output(changePin, GPIO.LOW)
-      message = "Turned " + deviceName + " off."
+      message = "Turned " + deviceName + " on."
 
    # For each pin, read the pin state and store it in the pins dictionary:
    for pin in pins:
