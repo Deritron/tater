@@ -32,7 +32,7 @@ time.sleep(watertijd)
 
 GPIO.output(3, GPIO.HIGH)
 print ("Ik ben nu klaar met water geven.")
-#GPIO.cleanup()
+
 
 #logbestand=open("/webapp/taterlog.txt","a+")
 nu=datetime.datetime.now()
