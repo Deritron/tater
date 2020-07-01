@@ -8,7 +8,7 @@ GPIO.setmode(GPIO.BOARD)
 
 # Create a dictionary called pins to store the pin number, name, and pin state:
 pins = {
-   3 : {'name' : 'GPIO 3', 'state' : GPIO.LOW},
+   3 : {'name' : 'GPIO 3', 'state' : GPIO.HIGH},
    }
 
 # Set each pin as an output and make it low:
@@ -38,11 +38,11 @@ def action(changePin, action):
    # If the action part of the URL is "on," execute the code indented below:
    if action == "on":
       # Set the pin high:
-      GPIO.output(changePin, GPIO.LOW)
+      GPIO.output(changePin, GPIO.HIGH)
       # Save the status message to be passed into the template:
       message = "Turned " + deviceName + " on."
    if action == "off":
-      GPIO.output(changePin, GPIO.HIGH)
+      GPIO.output(changePin, GPIO.LOW)
       message = "Turned " + deviceName + " off."
 
    # For each pin, read the pin state and store it in the pins dictionary:
