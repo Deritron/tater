@@ -1,6 +1,6 @@
 Dit is een infobestand over het project.
 
-Onderstaande is informatie als je met SSH bent ingelogd op de Raspberry Pi:
+Onderstaande is informatie als je met SSH-Putty bent ingelogd op de Raspberry Pi:
 
 De Code op GitHub kan je op Raspberry Pi krijgen door in de locatie /webapp te gaan staan en vervolgens "git pull" als commando te geven.
 
