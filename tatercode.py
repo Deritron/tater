@@ -11,7 +11,7 @@ GPIO.setup(3, GPIO.OUT) #bijopstarten staat pinnetje altijd af
 
 
 #watertijd is de duurtijd in seconde dat hij water zal geven
-watertijd = 2
+watertijd = 1
 
 
 
