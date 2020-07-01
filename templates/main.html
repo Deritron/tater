@@ -10,7 +10,7 @@
 </head>
 
 <body>
-   <h1>RPi Web Server</h1>
+   <h1>Tater project</h1>
    {% for pin in pins %}
    <h2>{{ pins[pin].name }}
    {% if pins[pin].state == true %}
@@ -21,5 +21,6 @@
       <a href="/{{pin}}/on" class="btn btn-block btn-lg btn-primary" role="button">Sluit klep</a></div></div>
    {% endif %}
    {% endfor %}
+<p> Gemaakt door Tongfa J. </p>
 </body>
 </html>
