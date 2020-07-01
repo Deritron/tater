@@ -4,6 +4,7 @@ import datetime
 import RPi.GPIO as GPIO
 
 #initialisatie pinnetje
+GPIO.cleanup()
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD) #we gebruiken de fysieke pin nummer in de plaats van de GPIO nummer. (zie commando "pinout" op de Raspberry Pi
 GPIO.setup(8, GPIO.OUT, initial=GPIO.LOW) #bijopstarten staat pinnetje altijd af
@@ -31,6 +32,7 @@ time.sleep(watertijd)
 
 GPIO.output(8, GPIO.LOW)
 print ("Ik ben nu klaar met water geven.")
+#GPIO.cleanup()
 
 #logbestand=open("/webapp/taterlog.txt","a+")
 nu=datetime.datetime.now()
