@@ -25,12 +25,12 @@ print(huidigetijd)
 logbestand.write(huidigetijd)
 logbestand.write("\r\nIk begin nu water te geven.\r\n")
 
-GPIO.output(8, GPIO.HIGH)
+GPIO.output(8, GPIO.True)
 
 #start timer
 time.sleep(watertijd)
 
-GPIO.output(8, GPIO.LOW)
+GPIO.output(8, GPIO.False)
 print ("Ik ben nu klaar met water geven.")
 #GPIO.cleanup()
 
