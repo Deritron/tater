@@ -1,22 +1,14 @@
-'''
 
-Adapted excerpt from Getting Started with Raspberry Pi by Matt Richardson
-
-Modified by Rui Santos
-Complete project details: http://randomnerdtutorials.com
-
-'''
 
 import RPi.GPIO as GPIO
 from flask import Flask, render_template, request
 app = Flask(__name__)
 
-GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BOARD)
 
 # Create a dictionary called pins to store the pin number, name, and pin state:
 pins = {
-   23 : {'name' : 'GPIO 23', 'state' : GPIO.LOW},
-   24 : {'name' : 'GPIO 24', 'state' : GPIO.LOW}
+   3 : {'name' : 'GPIO 3', 'state' : GPIO.LOW},
    }
 
 # Set each pin as an output and make it low:
