@@ -15,10 +15,10 @@
    <h2>{{ pins[pin].name }}
    {% if pins[pin].state == true %}
       Waterklep staat nu <strong>on</strong></h2><div class="row"><div class="col-md-2">
-      <a href="/{{pin}}/off" class="btn btn-block btn-lg btn-default" role="button">Turn off</a></div></div>
+      <a href="/{{pin}}/off" class="btn btn-block btn-lg btn-default" role="button">Turn on</a></div></div>
    {% else %}
       Waterklep staat nu <strong>off</strong></h2><div class="row"><div class="col-md-2">
-      <a href="/{{pin}}/on" class="btn btn-block btn-lg btn-primary" role="button">Turn on</a></div></div>
+      <a href="/{{pin}}/on" class="btn btn-block btn-lg btn-primary" role="button">Turn off</a></div></div>
    {% endif %}
    {% endfor %}
 </body>
